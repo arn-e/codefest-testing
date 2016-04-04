@@ -1,0 +1,30 @@
+<!-- <template name="task">
+  <li class="{{#if checked}}checked{{/if}}">
+    <button class="delete">&times;</button>
+
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+
+    <span class="text">{{text}}</span>
+  </li>
+</template> -->
+
+<template name="task">
+  <!-- <li>{{Name}} {{Point_X}} {{Point_Y}}</li> -->
+  <tr class="{{#if checked}}checked{{/if}}">
+    <td>
+      <button class="delete">&times;</button>
+    </td>
+    <!-- <input type="checkbox" checked="{{checked}}" class="toggle-checked" /> -->
+
+    <!-- <td>{{Name}}</td> -->
+    <td>
+      <input type="text" value="{{Name}}" name="nameItem">
+    </td>
+    <td>
+      <input type="text" value="{{Point_X}}" name="nameItem">
+    </td>
+    <td>
+      <input type="text" value="{{Point_Y}}" name="nameItem">
+    </td>
+  </tr>
+</template>
