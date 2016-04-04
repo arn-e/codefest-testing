@@ -1,0 +1,29 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Todo List</h1>
+
+      <form class="new-task">
+        <input type="text" name="text" placeholder="Type to add new tasks" />
+      </form>
+
+    </header>
+
+    <!-- <ul> -->
+    <table border="1">
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    <!-- </ul> -->
+  </table>
+  </div>
+</body>
+
+<!-- <template name="task"> -->
+  <!-- <li>{{Name}} {{Point_X}} {{Point_Y}}</li> -->
+  <!-- <tr> -->
+    <!-- <td>{{Name}}</td> -->
+    <!-- <td>{{Point_X}}</td> -->
+    <!-- <td>{{Point_Y}}</td> -->
+  <!-- </tr> -->
+<!-- </template> -->
