@@ -1,3 +1,20 @@
 <head>
-  <title>simple</title>
+  <title>Trashy Demo</title>
 </head>
+
+<body>
+  <div id="mapContainer">
+    {{>map}}
+  </div>
+</body>
+
+<template name="map">
+    <div id="container" class="container">
+      <h1 class="title">Map View</h1>
+      <div id="map" class="map"></div>
+      <!-- <div class="notice"> -->
+        <!-- Double-click on map creates a marker<br> -->
+        <!-- Click on a marker to delete it -->
+      <!-- </div> -->
+    </div>
+</template>
